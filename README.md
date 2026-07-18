@@ -4,6 +4,14 @@
 
 It is designed for event pipelines, message queues, batch processing, persistence, transaction boundaries, retries, ACK/reject behavior, DLQs, circuit breakers, and other end-to-end algorithms.
 
+## Example result
+
+![Animated RabbitMQ-to-PostgreSQL system flow](docs/rabbit-to-db-demo.gif)
+
+The preview switches from a successful batch commit to a database failure with recursive split, per-message ACK, and singleton rejection to a DLQ.
+
+Download and open the [interactive HTML demo](examples/rabbit-to-db-demo.html) to use the scenario buttons, pause or resume message flow, and inspect the responsive mobile layout.
+
 ## What it produces
 
 - An interactive diagram directly in the Codex conversation
@@ -72,6 +80,10 @@ $visualize-system-flow Use this screen recording as a visual reference and expla
 ```text
 .
 ├── README.md
+├── docs/
+│   └── rabbit-to-db-demo.gif
+├── examples/
+│   └── rabbit-to-db-demo.html
 └── visualize-system-flow/
     ├── SKILL.md
     ├── agents/
