@@ -1,0 +1,4 @@
+interface:
+  display_name: "Animated System Flow"
+  short_description: "Build animated architecture and data-flow diagrams"
+  default_prompt: "Use $visualize-system-flow to turn this architecture or algorithm into an animated interactive system-flow diagram and export standalone HTML."
